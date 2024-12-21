@@ -1,0 +1,95 @@
+
+        body {
+            font-family: 'Scheherazade', serif;
+            background: linear-gradient(to bottom, rgba(209, 209, 209, 0), rgba(215, 215, 215, 0.096)), url('https://img9.irna.ir/old/Image/1393/13930825/81388333/N81388333-6079798.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            direction: rtl; /* Right to Left for Persian text */
+            text-align: right;
+            animation: fadeIn 2s ease-in;
+        }
+        
+        header {
+            background-color: rgba(4, 5, 54, 0.8);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: slideIn 1s ease-out;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.85);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            animation: popIn 1.5s ease-in-out;
+        }
+        
+        .poem p {
+            line-height: 1.8;
+            margin: 15px 0;
+            font-size: 1.4em;
+            color: #000000;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        
+        footer {
+            background-color: rgba(68, 68, 77, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 1s ease-in-out;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+        
+            h1 {
+                font-size: 2.5em;
+            }
+        
+            .poem p {
+                font-size: 1.2em;
+            }
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @keyframes popIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            80% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        
+        @keyframes fadeInUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
